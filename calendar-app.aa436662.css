@@ -1,0 +1,96 @@
+.calendar {
+  border: 1px solid #ccc;
+  margin: 20px;
+}
+
+.calendar .header {
+  background: #f0f0f0;
+  font-weight: bold;
+  display: flex;
+}
+
+.calendar .header .corner {
+  border-right: 1px solid #ccc;
+  width: 80px;
+  padding: 10px;
+}
+
+.calendar .header .day-header {
+  text-align: center;
+  border-right: 1px solid #ccc;
+  flex: 1;
+  padding: 10px;
+}
+
+.calendar .row {
+  display: flex;
+}
+
+.calendar .row .time-label {
+  background: #f9f9f9;
+  border-right: 1px solid #ccc;
+  width: 80px;
+  padding: 10px;
+}
+
+.calendar .row .slot {
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #ccc;
+  flex: 1;
+  padding: 10px;
+}
+
+.calendar .row .slot.available {
+  background: #d4edda;
+}
+
+.calendar .row .slot.booked {
+  cursor: not-allowed;
+  background: #f8d7da;
+}
+
+.booking-form {
+  background: #fff;
+  border: 2px solid #333;
+  padding: 20px;
+  position: fixed;
+  top: 30%;
+  left: 35%;
+  box-shadow: 0 0 10px #0000004d;
+}
+
+.booking-form input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 5px;
+  display: block;
+}
+
+.booking-form .form-buttons {
+  justify-content: space-between;
+  display: flex;
+}
+
+.booking-form .form-buttons .cancel {
+  color: #fff;
+  background: #f44336;
+}
+
+.role-toggle {
+  margin: 20px 0;
+}
+
+.role-toggle button {
+  cursor: pointer;
+  background: #e0e0e0;
+  border: none;
+  margin-right: 10px;
+  padding: 8px 15px;
+}
+
+.role-toggle button.active {
+  color: #fff;
+  background: #007bff;
+}
+/*# sourceMappingURL=calendar-app.aa436662.css.map */
