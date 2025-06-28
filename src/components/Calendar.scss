@@ -1,0 +1,96 @@
+.calendar {
+    margin: 20px;
+    border: 1px solid #ccc;
+  
+    .header {
+      display: flex;
+      background: #f0f0f0;
+      font-weight: bold;
+  
+      .corner {
+        width: 80px;
+        padding: 10px;
+        border-right: 1px solid #ccc;
+      }
+  
+      .day-header {
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+        border-right: 1px solid #ccc;
+      }
+    }
+  
+    .row {
+      display: flex;
+  
+      .time-label {
+        width: 80px;
+        padding: 10px;
+        border-right: 1px solid #ccc;
+        background: #f9f9f9;
+      }
+  
+      .slot {
+        flex: 1;
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+        border: 1px solid #ccc;
+  
+        &.available {
+          background: #d4edda;
+        }
+  
+        &.booked {
+          background: #f8d7da;
+          cursor: not-allowed;
+        }
+      }
+    }
+  }
+  
+  .booking-form {
+    position: fixed;
+    top: 30%;
+    left: 35%;
+    background: #fff;
+    padding: 20px;
+    border: 2px solid #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  
+    input {
+      display: block;
+      margin: 10px 0;
+      padding: 5px;
+      width: 100%;
+    }
+  
+    .form-buttons {
+      display: flex;
+      justify-content: space-between;
+  
+      .cancel {
+        background: #f44336;
+        color: #fff;
+      }
+    }
+  }
+  
+  .role-toggle {
+    margin: 20px 0;
+  
+    button {
+      margin-right: 10px;
+      padding: 8px 15px;
+      border: none;
+      cursor: pointer;
+      background: #e0e0e0;
+  
+      &.active {
+        background: #007bff;
+        color: #fff;
+      }
+    }
+  }
+  
