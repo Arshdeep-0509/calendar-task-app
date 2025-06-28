@@ -2,9 +2,12 @@
   "name": "calendar-app",
   "version": "1.0.0",
   "description": "",
+  "homepage": "https://Arshdeep-0509.github.io/calendar-task-app",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --dist-dir dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
